@@ -181,8 +181,21 @@
 
 		<section class="main-section" id="Flexbox">
 			<header>Flexbox</header>
+			<p>Flexbox makes responsive design easier by making the display flexible. To use Flexbox, set the display of the container (not the items themselves) to flex.</p>
+			<p>You can set the flex-direction property to row, column, row-reverse or column-reverse.</p>
+			<p>To avoid the container from going off screen when the viewport gets too small, set the flex-wrap to wrap or wrap-reverse.</p>
+			<p>Or you could directly use the flex-flow shorthand to set both the flex-direction and flex-wrap.</p>
+			<p>The justify-content property is used to align items along the flex-direction and can be set to center, flex-start, flex-end, space-around and space-between.</p>
+			<p>In contrast, the align-items property is used to align items along the cross-axis and can be set to center, flex-start, flex-end, stretch or baseline</p>
+			<p>The align-content property is similar to align-items but it aligns the flex line rather than the items themselves and can be set to space-between, space-around, stretch, center, flex-start and flex-end.</p>
+			<div class="code-example">
+				<code>.flex-container {</code>
+				<code>	display: flex</code>
+				<code>	flex-flow: row wrap</code>
+				<code>	justify-content: center</code>
+				<code>	align-items: center</code>
+			</div>
 		</section>
-
 	</main>
 </body>
 </html>
