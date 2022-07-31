@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<title>Calvin's CSS Notes</title>
+</head>
+<body>
+	<nav id="navbar">
+		<header>Calvin's CSS Notes</header>
+		<input type="checkbox" id="nav-toggle">
+		<label for="nav-toggle"><i class="fas fa-bars" id="button"></i></label>
+		<ul id="nav-list">
+			<li><a href="#Introduction" class="nav-link">Introduction</a></li>
+			<li><a href="#Box_Model" class="nav-link">Box Model</a></li>
+			<li><a href="#Typography" class="nav-link">Typography</a></li>
+			<li><a href="#Displays_and_Position" class="nav-link">Displays and Position</a></li>
+			<li><a href="#Flexbox" class="nav-link">Flexbox</a></li>
+		</ul>
+	</nav>
+
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header>Introduction</header>
+			<p>These notes are intended for personal use, and is by no means comprehensive. All documentation and further explanation of CSS properties can be found on <a href="https://www.w3schools.com/cssref/default.asp" id="reference">W3Schools</a></p>
+		</section>
+
+		<section class="main-section" id="Box_Model">
+			<header>Box Model</header>
+			<figure>
+				<img src="https://miro.medium.com/max/725/1*2jZwpWH9XO_QllhEpyGqMA.png" alt="CSS Box Model Figure">
+				<figcaption>How an element is ordered and displayed in CSS</figcaption>
+			</figure>
+			<div class="code-group">
+				<p>Height and width can be altered using their respective properties using units such as pixels percentages and can be assigned a minimum and/or maximum value.</p>
+				<div class="code-example">
+					<code>width: 80%;</code>
+					<code>max-width: 600px;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>Padding and margin can both be assigned individually or by using the shorthand property in the order of either top, right, bottom, left (clockwise order) or top-bottom, left-right. Setting the left-right margin to auto will center the element</p>
+				<div class="code-example">
+					<code>padding-top: 10px;</code>
+					<code>margin: 5px auto;</code>
+				</div>	
+			</div>
+			<div class="code-group">
+				<p>Padding and borders would typically increase the width and height of the element. To avoid this, the following property can be used:</p>
+				<div class="code-example">
+					<code>box-sizing: border-box;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>A border can be added using its shorthand property which sets the value of width, style and color in order. The following are some common border styles:</p>
+				<ul id="Border-Styles">
+					<li class="border-styles" id="Solid">Solid</li>
+					<li class="border-styles" id="Double">Double</li>
+					<li class="border-styles" id="Dashed">Dashed</li>
+					<li class="border-styles" id="Dotted">Dotted</li>
+				</ul>
+				<p>A border can also be rounded by using the border-radius shorthand property.</p>
+				<div class="code-example">
+					<code>border-radius: 5px;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>You can set the background color of an element using hexadecimal, rgba or hsla formats. Just make sure there is enough contrast for the text to be legible.</p>
+				<div class="code-example">
+					<code>background-color: rgba(23, 54, 33, 0.8);</code>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-section" id="Typography">
+			<header>Typography</header>
+			<div class="code-group">
+				<p>The font used can be set using the font-family property. Make sure to set a backup font to be safe.</p>
+				<div class="code-example">
+					<code>font-family: 'Open Sans', sans-serif;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>Font size can be changed using the font-size property. Pixels is a common units but for responsive designs, using em or rem would be better.</p>
+				<div class="code-example">
+					<code>font-size: 2rem;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>The color property assigns the color of text. You can use hexadecimal, rgba or hsla.</p>
+				<div class="code-example">
+					<code>color: #D3D3D3;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>To change the boldness of the font, use font-weight. You could set it to bold or assign a numeric value.</p>
+				<div class="code-example">
+					<code>font-weight: 800;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>To make a text italic, use the font-style property. It can also be set to oblique.</p>
+				<div class="code-example">
+					<code>font-style: italic;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>Use the text-align property to align text to the left, right, center, or justify (equal width) within its element.</p>
+				<div class="code-example">
+					<code>text-align: justify;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>You can make text more legible by increasing the spacing between lines using line-height.</p>
+				<div class="code-example">
+					<code>line-height: 1.4;</code>
+				</div>
+			</div>
+			<div class="code-group">
+				<p>To make fancier titles, you can use the letter-spacing property.</p>
+				<div class="code-example">
+					<code>letter-spacing: 2px;</code>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-section" id="Displays_and_Position">
+			<header>Displays and Position</header>
+		</section>
+
+		<section class="main-section" id="Flexbox">
+			<header>Flexbox</header>
+		</section>
+
+	</main>
+</body>
+</html>
