@@ -14,6 +14,8 @@ body {
 #navbar {
 	background-color: #FFB95D;
 	position: fixed;
+	top: 0;
+	left: 0;
 	width: 300px;
 	height: 100%;
 }
@@ -49,14 +51,40 @@ body {
 	text-decoration: none;
 	font-weight: 600;
 	color: black;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
+	padding: 10px;
+	border-radius: 5px;
 }
 
-main {
+.nav-link:hover {
+	background-color: #ffa52e;
+}
+
+
+#main-doc {
 	width: calc(100% - 300px);
 	position: relative;
 	left: 300px;
+	padding: 0 30px;
+}
 
+.main-section {
+	margin-bottom: 40px;
+}
+
+.buffer {
+	height: 1px;
+}
+
+#main-doc header {
+	font-size: 1.6rem;
+	font-weight: 700;
+	margin: 30px 0;
+}
+
+#Introduction a {
+	color: #0aac53;
+	font-weight: 600;
 }
 
 figure {
@@ -70,6 +98,53 @@ img {
 
 figcaption {
 	text-align: center;
+}
+
+p {
+	margin-top: 0;
+	padding-left: 20px;
+}
+
+.code-group {
+	margin: 50px 0;
+}
+
+.code-example {
+	width: 90%;
+	margin: auto;
+	color: #F6F6F6;
+	background-color: #262A33;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+code {
+	display: block;
+}
+
+#main-doc li{
+	margin: 10px 25px;
+	width: 100px;
+}
+
+#Solid {
+	border-right: 2px solid;
+}
+
+#Double {
+	border-right: 4px double;
+}
+
+#Dashed {
+	border-right: 2px dashed;
+}
+
+#Dotted {
+	border-right: 2px dotted;
+}
+
+#Flexbox p {
+	margin-bottom: 25px;
 }
 /*
 Theme:
