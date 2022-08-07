@@ -92,13 +92,10 @@ body {
 	padding-top: 0;
 }
 
-.buffer {
-	height: 30px;
-}
-
 #main-doc header {
 	font-size: 1.6rem;
 	font-weight: 700;
+	padding-top: 30px;
 	margin-bottom: 40px;
 }
 
@@ -207,11 +204,11 @@ code {
 		left: 0;
 	}
 
-	.buffer {
-		height: 100px;
-	}
-
 	.main-section:not(:last-of-type) {
 		margin-bottom: -70px;
+	}
+
+	#main-doc header{
+		padding-top: 100px;
 	}
 }
